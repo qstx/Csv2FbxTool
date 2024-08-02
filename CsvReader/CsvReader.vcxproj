@@ -147,8 +147,10 @@
   <ItemGroup>
     <ClInclude Include="include\csv.h" />
     <ClInclude Include="include\RDCsvReader.h" />
+    <ClInclude Include="include\Mesh.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Mesh.cpp" />
     <ClCompile Include="src\RDCsvReader.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
