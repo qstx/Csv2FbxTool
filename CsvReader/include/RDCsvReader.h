@@ -1,14 +1,20 @@
 #pragma once
 #include <vector>
+#include <memory>
+#include <iostream>
 
-#include "csv.h"
-#include "Mesh.h"
+namespace mesh {
+	class Mesh;
+}
 
 namespace csv {
 	class RDCsvReader {
 	public:
-		RDCsvReader(std::string csv_file);
+		RDCsvReader(std::string csv_file_name);
+		inline std::shared_ptr<mesh::Mesh> GetMesh() {
+			return _mesh;
+		}
 	private:
-		mesh::Mesh _mesh;
+		std::shared_ptr<mesh::Mesh> _mesh;
 	};
 }

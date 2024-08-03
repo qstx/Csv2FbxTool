@@ -24,6 +24,9 @@
     <ClInclude Include="include\Mesh.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\rapidcsv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\RDCsvReader.cpp">

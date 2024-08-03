@@ -146,6 +146,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\csv.h" />
+    <ClInclude Include="include\rapidcsv.h" />
     <ClInclude Include="include\RDCsvReader.h" />
     <ClInclude Include="include\Mesh.h" />
   </ItemGroup>
