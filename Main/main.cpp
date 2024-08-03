@@ -7,7 +7,7 @@
 #include <fbxsdk.h>
 #include <fbxsdk/fileio/fbxiosettings.h>
 
-int main(int argc,char* argv) {
+int main(int argc,char* argv[]) {
     csv::RDCsvReader csv_reader("Assets/Nemo.csv");
     FbxManager* lSdkManager = FbxManager::Create();
 
