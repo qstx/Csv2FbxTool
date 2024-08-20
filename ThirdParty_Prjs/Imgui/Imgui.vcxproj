@@ -21,8 +21,21 @@
   <ItemGroup>
     <ClCompile Include="..\..\ThirdParties\imgui\backends\imgui_impl_dx12.cpp" />
     <ClCompile Include="..\..\ThirdParties\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\..\ThirdParties\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\ThirdParties\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\ThirdParties\imgui\imgui_draw.cpp" />
     <ClCompile Include="..\..\ThirdParties\imgui\imgui_tables.cpp" />
     <ClCompile Include="..\..\ThirdParties\imgui\imgui_widgets.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ThirdParties\imgui\backends\imgui_impl_dx12.h" />
+    <ClInclude Include="..\..\ThirdParties\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="..\..\ThirdParties\imgui\imconfig.h" />
+    <ClInclude Include="..\..\ThirdParties\imgui\imgui.h" />
+    <ClInclude Include="..\..\ThirdParties\imgui\imgui_internal.h" />
+    <ClInclude Include="..\..\ThirdParties\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\..\ThirdParties\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\..\ThirdParties\imgui\imstb_truetype.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -78,12 +91,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>$(ProjectName)_d</TargetName>
-    <OutDir>$(SolutionDir)bin\$(Configuration)_$(Platform)\</OutDir>
-    <IntDir>$(SolutionDir)bin-int\$(Configuration)_$(Platform)\</IntDir>
+    <OutDir>$(SolutionDir)lib\$(Configuration)_$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)bin\$(Configuration)_$(Platform)\</OutDir>
-    <IntDir>$(SolutionDir)bin-int\$(Configuration)_$(Platform)\</IntDir>
+    <OutDir>$(SolutionDir)lib\$(Configuration)_$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
