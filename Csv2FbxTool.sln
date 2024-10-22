@@ -3,15 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Main", "Main\Main.vcxproj", "{55810DB9-A295-49BC-AC16-3FEDEA4FD13C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CsvApp", "Main\Main.vcxproj", "{55810DB9-A295-49BC-AC16-3FEDEA4FD13C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1B54B3C0-BF1E-4F44-9E6C-0E8B2DE32958} = {1B54B3C0-BF1E-4F44-9E6C-0E8B2DE32958}
 		{33B26695-7A4E-4B2C-857E-676EC4766645} = {33B26695-7A4E-4B2C-857E-676EC4766645}
+		{C6927AC6-33EC-4B1F-A757-A3B293F63F61} = {C6927AC6-33EC-4B1F-A757-A3B293F63F61}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CsvReader", "CsvReader\CsvReader.vcxproj", "{33B26695-7A4E-4B2C-857E-676EC4766645}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Imgui", "ThirdParty_Prjs\Imgui\Imgui.vcxproj", "{1B54B3C0-BF1E-4F44-9E6C-0E8B2DE32958}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "Core\Core.vcxproj", "{C6927AC6-33EC-4B1F-A757-A3B293F63F61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +48,14 @@ Global
 		{1B54B3C0-BF1E-4F44-9E6C-0E8B2DE32958}.Release|x64.Build.0 = Release|x64
 		{1B54B3C0-BF1E-4F44-9E6C-0E8B2DE32958}.Release|x86.ActiveCfg = Release|Win32
 		{1B54B3C0-BF1E-4F44-9E6C-0E8B2DE32958}.Release|x86.Build.0 = Release|Win32
+		{C6927AC6-33EC-4B1F-A757-A3B293F63F61}.Debug|x64.ActiveCfg = Debug|x64
+		{C6927AC6-33EC-4B1F-A757-A3B293F63F61}.Debug|x64.Build.0 = Debug|x64
+		{C6927AC6-33EC-4B1F-A757-A3B293F63F61}.Debug|x86.ActiveCfg = Debug|Win32
+		{C6927AC6-33EC-4B1F-A757-A3B293F63F61}.Debug|x86.Build.0 = Debug|Win32
+		{C6927AC6-33EC-4B1F-A757-A3B293F63F61}.Release|x64.ActiveCfg = Release|x64
+		{C6927AC6-33EC-4B1F-A757-A3B293F63F61}.Release|x64.Build.0 = Release|x64
+		{C6927AC6-33EC-4B1F-A757-A3B293F63F61}.Release|x86.ActiveCfg = Release|Win32
+		{C6927AC6-33EC-4B1F-A757-A3B293F63F61}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
